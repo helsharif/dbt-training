@@ -33,4 +33,4 @@ models:
   dbt_tutorial:
     # Config indicated by + and applies to all files under models/example/
     bronze:
-      +materialized: table # can also be 'view'. 'table makes a physical table in the data warehouse (databricks)'
+      +materialized: table # can also be 'view'. 'table' makes a physical table in the data warehouse (databricks)

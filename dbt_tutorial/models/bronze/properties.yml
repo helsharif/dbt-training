@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: bronze_date # name must match the filename of the SQL model
+    description: "A description of the model using markdown."
+    # In-file configurations using the 'config' key
+    config:
+      materialized: view
+
+  - name: bronze_product # name must match the filename of the SQL model
+    description: "A description of the model using markdown."
+    # In-file configurations using the 'config' key
+    config:
+        materialized: view
+      
