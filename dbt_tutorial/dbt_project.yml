@@ -34,3 +34,17 @@ models:
     # Config indicated by + and applies to all files under models/example/
     bronze:
       +materialized: table # can also be 'view'. 'table' makes a physical table in the data warehouse (databricks)
+      schema: bronze # overrides default schema for models in this directory
+    silver:
+      +materialized: table # can also be 'view'. 'table' makes a physical table in the data warehouse (databricks)
+      schema: silver # overrides default schema for models in this directory
+    gold:
+      +materialized: table # can also be 'view'. 'table' makes a physical table in the data warehouse (databricks)
+      schema: gold # overrides default schema for models in this directory
+
+
+# Configuring seeds
+# Full documentation: https://docs.getdbt.com/docs/configuring-seeds 
+seeds:
+  dbt_tutorial:
+    +schema: bronze
