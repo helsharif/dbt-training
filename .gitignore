@@ -183,3 +183,8 @@ cython_debug/
 
 # secret tokens
 profiles.yml
+
+# other files to hide
+.docx
+.tmp
+~$tes 001 Ansh Lamba DBT Training.docx
